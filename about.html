@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Обо мне — frontend-разработчик d4rkn3ss-code." />
+  <title>Обо мне — d4rkn3ss-code</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <canvas id="snow-canvas" aria-hidden="true"></canvas>
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="eyes-layer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo" aria-label="Главная">
+      <span class="logo-mark">◈</span>
+      <span class="logo-text">d4rkn3ss-code</span>
+    </a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="index.html" class="nav-link">Главная</a>
+      <a href="about.html" class="nav-link active">Обо мне</a>
+      <a href="projects.html" class="nav-link">Проекты</a>
+      <a href="contact.html" class="nav-link">Контакты</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему" type="button">
+      <span class="theme-icon sun" aria-hidden="true">☀</span>
+      <span class="theme-icon moon" aria-hidden="true">☾</span>
+    </button>
+  </header>
+
+  <main class="page">
+    <h1 class="page-title reveal">Обо мне</h1>
+    <p class="page-lead reveal">
+      Я — разработчик, который превращает идеи в интерфейсы. Специализируюсь на
+      создании премиальных веб-продуктов: от лендингов до сложных SPA.
+    </p>
+
+    <div class="grid-2">
+      <article class="card reveal">
+        <h2>Что я умею</h2>
+        <ul class="list">
+          <li>Frontend: HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Vue.</li>
+          <li>Backend: Node.js, Express, PostgreSQL, REST, JWT.</li>
+          <li>UI/UX: Figma, дизайн-системы, микроанимации, доступность.</li>
+          <li>DevOps: Git, CI/CD, Vercel, Docker (базово).</li>
+        </ul>
+      </article>
+
+      <article class="card reveal">
+        <h2>Принципы</h2>
+        <ul class="list">
+          <li>Никаких заглушек — только рабочий код.</li>
+          <li>Производительность важнее «красивых» фреймворков.</li>
+          <li>Доступность — не опция, а стандарт.</li>
+          <li>Дизайн должен быть интуитивным с первого взгляда.</li>
+        </ul>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> d4rkn3ss-code — сделано с любовью к деталям.</p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

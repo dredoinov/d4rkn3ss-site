@@ -1,0 +1,44 @@
+/* =========================================================
+   themes.css — Цветовые токены тем
+   ========================================================= */
+
+:root,
+[data-theme="dark"] {
+  --bg: #07070c;
+  --bg-elevated: rgba(18, 18, 28, 0.72);
+  --bg-gradient:
+    radial-gradient(1200px 800px at 12% 8%, rgba(124, 92, 255, 0.35), transparent 60%),
+    radial-gradient(900px 700px at 88% 18%, rgba(0, 209, 255, 0.28), transparent 55%),
+    radial-gradient(1000px 900px at 50% 110%, rgba(255, 82, 190, 0.22), transparent 60%),
+    linear-gradient(180deg, #07070c 0%, #0a0a14 100%);
+  --text: #f2f3f7;
+  --text-muted: #9aa0b4;
+  --border: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-hover: rgba(255, 255, 255, 0.07);
+  --accent: #7c5cff;
+  --accent-2: #00d1ff;
+  --accent-3: #ff52be;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  --snow-color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] {
+  --bg: #f6f7fb;
+  --bg-elevated: rgba(255, 255, 255, 0.75);
+  --bg-gradient:
+    radial-gradient(1200px 800px at 12% 8%, rgba(124, 92, 255, 0.22), transparent 60%),
+    radial-gradient(900px 700px at 88% 18%, rgba(0, 180, 255, 0.20), transparent 55%),
+    radial-gradient(1000px 900px at 50% 110%, rgba(255, 120, 200, 0.18), transparent 60%),
+    linear-gradient(180deg, #f6f7fb 0%, #eef1f8 100%);
+  --text: #12131a;
+  --text-muted: #5b6072;
+  --border: rgba(10, 12, 30, 0.08);
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-hover: rgba(255, 255, 255, 0.9);
+  --accent: #6a3dff;
+  --accent-2: #0091ff;
+  --accent-3: #ff3d9e;
+  --shadow: 0 20px 50px rgba(20, 20, 60, 0.12);
+  --snow-color: rgba(120, 140, 255, 0.75);
+}
